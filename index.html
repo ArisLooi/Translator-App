@@ -1,0 +1,63 @@
+<!-- refer to this slides for instruction, copy and paste the link in search bar: https://docs.google.com/presentation/d/1uKOjrH9VFBNkjSNStVHwwksRpjnCwhlJdfExmW121D0/edit?usp=sharing -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Translator App</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+      <div id="top">
+        <div>
+          <img src="logo.png" alt="logo" />
+        </div>
+        <h1>Welcome back!</h1>
+        <p>Embrace the Power of Translation!</p>
+      </div>
+
+      <form>
+        <div class="inputs-container">
+          <div class="input-container">
+            <select disabled>
+              <option>English</option>
+            </select>
+            <textarea
+              id="inputText"
+              placeholder="Type Your Text Here"
+            ></textarea>
+          </div>
+
+          <div class="input-container">
+            <select id="language">
+              <option value="malay">Malay</option>
+              <option value="spanish">Spanish</option>
+              <option value="french">French</option>
+              <option value="german">German</option>
+              <option value="chinese">Chinese</option>
+            </select>
+            <textarea
+              id="translatedText"
+              placeholder="Translation Not Found"
+              disabled
+            ></textarea>
+          </div>
+        </div>
+
+        <button type="button" onclick="translateText()">Translate</button>
+      </form>
+    </main>
+
+    <div id="cover">
+      <img src="cover.png" alt="cover" />
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

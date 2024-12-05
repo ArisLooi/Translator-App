@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  color: white;
+}
+
+main {
+  flex: 1;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  background-color: #541554;
+}
+
+#top {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.inputs-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-container {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  padding: 12px 16px;
+  border-bottom: 1px solid #a8a9a9;
+  border-style: none;
+  background-color: white;
+  font-size: 14px;
+}
+
+.input-container select#language:hover {
+  color: black;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+textarea {
+  flex: 1;
+  border-radius: 0px;
+  border-style: none;
+  padding: 16px;
+}
+
+#cover {
+  display: none;
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#cover img {
+  max-width: 100%;
+}
+
+button {
+  width: 100%;
+  color: white;
+  padding: 12px;
+  background-color: #ffaac3;
+  border-style: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #e77697;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    padding: 80px;
+    gap: 42px;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  form {
+    flex: 0;
+  }
+
+  .inputs-container {
+    flex-direction: row;
+  }
+
+  .input-container {
+    height: 256px;
+  }
+
+  button {
+    font-size: 24px;
+    padding: 16px;
+  }
+
+  #cover {
+    display: flex;
+  }
+}
